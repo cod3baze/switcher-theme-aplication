@@ -6,10 +6,11 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     outline: 0;
+    font-family: "Roboto";
   }
 
   body {
-    background: ${(props) => props.theme.colors.background};
+    background: ${(props) => props.theme.colors.secundary};
     font-size: 16px;
 
     color: ${(props) => props.theme.colors.text};
