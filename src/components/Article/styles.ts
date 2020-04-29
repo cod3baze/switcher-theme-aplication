@@ -1,18 +1,12 @@
 import styled from "styled-components";
 
-/*
-  bg : #f6f8fa
-  cntBg: #dceaf7
-  name: #000
-  bio: #0e0e0e
-  menuBG: #f25
-*/
-
 export const Container = styled.div`
   width: 600px;
   height: 300px;
 
-  background-color: #dceaf7;
+  margin: 0 auto;
+
+  background-color: ${(props) => props.theme.colors.cntBg};
   border-radius: 4px;
 
   padding: 5px;
@@ -23,7 +17,7 @@ export const Seg = styled.p`
 `;
 
 export const Name = styled.strong`
-  color: #000;
+  color: ${(props) => props.theme.colors.name};
   line-height: 20px;
 `;
 
@@ -32,8 +26,19 @@ export const Bio = styled.div`
 
   p {
     line-height: 20px;
-    color: #0e0e0e;
+    color: ${(props) => props.theme.colors.bio};
   }
+`;
+
+export const Menu = styled.div`
+  display: grid;
+  gap: 20;
+  grid-template-columns: repeat(3, 1fr);
+
+  background: ${(props) => props.theme.colors.menuBG};
+  border-radius: 4px;
+  margin: 20px 0;
+  padding: 5px;
 `;
 
 export const Avatar = styled.div`
