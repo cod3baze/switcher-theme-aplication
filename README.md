@@ -7,3 +7,5 @@
   ![Theme Dark](./assets/images/dark.png)
 
 [Elias alexandr](https://github.com/eliasallex)
+
+If you found any fault please reports [US](https;//github.com/Geni-sys)
